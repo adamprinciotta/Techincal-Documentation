@@ -3,21 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./stlyes.css">
+    <link rel="stylesheet" href="./styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <nav id="navbar">
+        <h1>&nbsp;Fundamental &nbsp;Coding &nbsp;Structures</h1>
+        <!-- <h2>Variables, Functions, Loops, and Conditionals</h2>
+        -->
+        <a class="nav-link" id="variablesNav" href="#variables">&nbsp;Variables</a>
+        <a class="nav-link" href="#functions">&nbsp;Functions</a>
+        <a class="nav-link" href="#loops">&nbsp;Loops</a>
+        <a class="nav-link" href="#conditionals">&nbsp;Conditionals</a>
+    </nav>
 </head>
 
 <body>
-    <h1>Technical Documentation:</h1>
-    <h2>Variables, Functions, Loops, and Conditionals</h2>
 
-    <h4>Programming languages have different structures that enable developers to write efficient code. In this
+
+    <h2>Programming languages have different structures that enable developers to write efficient code. In this
         technical documentation, we will discuss four essential structures that are commonly used in many programming
-        languages: variables, functions, loops, and conditionals. </h4>
+        languages: variables, functions, loops, and conditionals. </h2>
+    <hr class="under">
 
-    <h3>Variables</h3>
+    <h3 id="variables">Variables</h3>
 
     <p>Variables are used to store and manipulate data in programming. In most programming languages, variables have to
         be declared before they are used. Here are some key points about variables: </p>
@@ -33,14 +42,15 @@
 
     <h4>Here's an example of how to declare and use a variable in JavaScript:</h4>
 
-    <ul>
-        <code>let num1 = 5;</code><br />
-        <code>let num2 = 10;</code><br />
-        <code>let result = num1 + num2;</code><br />
-        <code>console.log(result); // Output: 15</code>
-    </ul>
-
-    <h3>Functions</h3>
+    <div class="codeContainer">
+            <code>let num1 = 5;</code><br />
+            <code>let num2 = 10;</code><br />
+            <code>let result = num1 + num2;</code><br />
+            <code>console.log(result); // Output: 15</code>
+    </div>
+    <br>
+    <hr class="under">
+    <h3 id="functions">Functions</h3>
     <p>Functions are reusable blocks of code that can be called multiple times in a program. They help in writing modular
     and maintainable code. Here are some key points about functions:</p>
 
@@ -54,20 +64,23 @@
 
     <h4>Here's an example of a function in JavaScript that adds two numbers:</h4>
 
-    <code>function addNumbers(num1, num2) {
+    <div class="codeContainer">
+        <code>function addNumbers(num1, num2) {
+            <br />
+            &emsp;&emsp;return num1 + num2;<br />
+        }
         <br />
-        <span class="tab">return num1 + num2;</span> <br />
-    }
+        <br />
+        let result = addNumbers(5, 10);
+        <br />
+        console.log(result); // Output: 15
+        </code>
+    </div>
     <br />
-    <br />
-    let result = addNumbers(5, 10);
-    <br />
-    console.log(result); // Output: 15
-    <br />
-    <br />
-</code>
+    <hr class="under">
 
-    <h3>Loops</h3>
+
+    <h3 id="loops">Loops</h3>
     <p>Loops are used to execute a block of code repeatedly. They are useful for iterating over arrays and objects, and for
     performing tasks that need to be repeated multiple times. Here are some key points about loops:</p>
 
@@ -79,15 +92,19 @@
 
     <h4>Here's an example of a for loop in JavaScript that iterates over an array and prints its elements:</h4>
 
-    <code>let array = [1, 2, 3, 4, 5];
-        <br>
-        <br>
-    for (let i = 0; i < array.length; i++) { 
-        <br> console.log(array[i]); 
-        <br>} 
-    </code>
-        <br>
-        <h3>Conditionals</h3> 
+    <div class="codeContainer">
+        <code>let array = [1, 2, 3, 4, 5];
+            <br>
+            <br>
+        for (let i = 0; i < array.length; i++) { 
+            <br> &emsp;&emsp;console.log(array[i]);
+            <br>} 
+        </code>
+    </div>
+    <br>
+    <hr class="under">
+
+        <h3 id="conditionals">Conditionals</h3> 
         <p>Conditionals are used to execute code
         based on a condition. They are useful for making decisions and branching the program's flow. Here are some key
         points about conditionals:</p> 
@@ -100,14 +117,16 @@
         <h4>Here's an example of an if statement in JavaScript that checks if a number is positive or
         negative:</h4> 
         
-        <code>let num=5;
-            <br>
-            <br>if (num > 0) {
-            <br>console.log("The number is positive");
-            <br>} else {
-            <br>console.log("The number is negative");
-            <br>}
-        </code>
+        <div class="codeContainer">
+            <code>let num=5;
+                <br>
+                <br>if (num > 0) {
+                <br>&emsp;&emsp;console.log("The number is positive");
+                <br>} else {
+                <br>&emsp;&emsp;console.log("The number is negative");
+                <br>}
+            </code>
+        </div>
         <h4>In conclusion, variables, functions, loops, and conditionals are fundamental to each coding language</h4>
         </p>
 </body>
